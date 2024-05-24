@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburber's Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8b400; /* bun color */
+            color: #4a2c00; /* patty color */
+        }
+        header {
+            background-color: #a83200; /* tomato color */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffd700; /* cheese color */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4a2c00; /* patty color */
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #a83200; /* tomato color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .form-section {
+            background-color: #d3e4cd; /* lettuce color */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4a2c00; /* patty color */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3b2400; /* darker patty color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Hamburber's Page</h1>
+    </header>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#media">Media Links</a>
+        <a href="#forum">Forum</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of my amazing projects:</p>
+        <ul>
+            <li>Project 1: Description of project 1</li>
+            <li>Project 2: Description of project 2</li>
+            <li>Project 3: Description of project 3</li>
+        </ul>
+    </section>
+    <section id="media">
+        <h2>Links to Media</h2>
+        <p>Connect with me on social media:</p>
+        <ul>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+    <section id="forum">
+        <h2>Forum</h2>
+        <p>Join the discussion in my forum:</p>
+        <ul>
+            <li><a href="#">General Discussion</a></li>
+            <li><a href="#">Project Ideas</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </section>
+    <section id="contact" class="form-section">
+        <h2>General Inquiry</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Hamburber. All rights reserved.</p>
+    </footer>
+</body>
+</html>
